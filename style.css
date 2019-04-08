@@ -1,3 +1,4 @@
-body {
-  color: brown;
+canvas {
+  background-color: white;
+  border: 5px solid black;
 }
