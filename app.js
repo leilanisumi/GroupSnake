@@ -25,7 +25,7 @@ function drawSnake() {
 }
 
 function growingSnake() {
-  const head = {x: snake (0).x + dx, y +dy};
+  const head = {x: snake (0).x + dx, y: y + dy};
   snake.unshift(head);
   snake.pop();
 }
