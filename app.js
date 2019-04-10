@@ -23,3 +23,9 @@ function draw() {
 
   }
 }
+
+function growingSnake() {
+  const head = {x: snake (0).x + dx, y +dy};
+  snake.unshift(head);
+  snake.pop();
+}
