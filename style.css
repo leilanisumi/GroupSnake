@@ -27,6 +27,17 @@ h1 {
                0 20px 20px rgba(0,0,0,.15);
 }
 
+.button {
+  background-color: lightsalmon;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px 8px;
+}
+
 canvas { 
   border: 1px solid black; 
   background-color: white;
