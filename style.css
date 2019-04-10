@@ -9,6 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -25,6 +26,17 @@ h1 {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+}
+
+.button {
+  background-color: lightsalmon;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px 8px;
 }
 
 canvas { 
