@@ -3,9 +3,9 @@ function draw() {
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = 'lightblue';
+    ctx.fillStyle = 'lightgreen';
 
-    ctx.strokestyle = 'darkblue';
+    ctx.strokestyle = 'darkgreen';
 
     ctx.fillRect(150, 150, 10, 10);
 
@@ -15,3 +15,4 @@ function draw() {
 
   }
 }
+
