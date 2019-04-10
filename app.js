@@ -6,7 +6,6 @@ let snake = [
   {x: 110, y: 150},
 ];
 
-<<<<<<< HEAD
 let dx = 10;
 let dy = 0;
 
@@ -33,9 +32,6 @@ ctx.fillRect(snakePart.x, snakePart.y, 10, 10);
 ctx.strokeRect(snakePart.x, snakePart.y, 10, 10);
 
 function draw() {
-=======
-function drawSnake() {
->>>>>>> 3166ae2df5edb94f16fef253b98ce0006d4ff55f
   var canvas = document.getElementById('canvas');
   if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
@@ -51,13 +47,6 @@ function drawSnake() {
     ctx.fillRect(150, 139, 10, 10);
 
   }
-}
-
-function growingSnake() {
-  const head = {x: snake (0).x + dx, y: y + dy};
-  snake.unshift(head);
-  snake.pop();
-}
 
 function drawApples() {
   
