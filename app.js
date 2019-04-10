@@ -6,3 +6,6 @@ let snake = [
   {x: 110, y: 150},
 ];
 
+function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
