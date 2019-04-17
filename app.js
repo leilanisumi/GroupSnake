@@ -132,8 +132,8 @@ function gameOver() {
 }
 
 function drawFood () {
-  ctx.fillStyle = '#ffc7ad';
-  ctx.strokeStyle = '#ffc7ad';
+  ctx.fillStyle = '#00ff00';
+  ctx.strokeStyle = '#00ff00';
   ctx.fillRect(foodX, foodY, 10, 10);
   ctx.strokeRect(foodX, foodY, 10, 10);
 
