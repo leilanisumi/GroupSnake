@@ -112,6 +112,14 @@ function clearCanvas() {
   ctx.strokeRect(0,0, canvas.width, canvas.height);
 }
 
+function gameRestart() {
+  ctx.fillStyle = 'blue';
+  ctx.strokeStyle = 'darkblue';
+  ctx.fillRect(10,5)
+  ctx.strokeRect(10,5)
+}
+
+
 function gameOver() {
   for (let i = 4; i < snake.length; i++) {
     const collision = snake[i].x === snake[0].x &&
