@@ -1,4 +1,3 @@
-
 const canvas_border = 'black';
 const canvas_background = 'white';
 const snake_color = '#ffc7ad';
@@ -15,6 +14,10 @@ let snake = [
 ];
 
 let dx = 10;
+<<<<<<< HEAD
+=======
+let dx = 20;
+>>>>>>> 54852536901bb2382c2ea8238ca6a658fc5c8887
 let dy = 0;
 
 var canvas = document.getElementById('canvas');
@@ -30,11 +33,17 @@ ctx.strokeRect (0, 0, canvas.width, canvas.height);
 drawSnake();
 
 
+
+
+drawSnake();
+
+
 function snakeMovement() {
   const head = {x: snake[0].x + dx, y: snake[0].y + dy};
   snake.unshift(head);
   const foodEaten = snake[0].x === foodX && snake [0].y === foodY;
   if (foodEaten) {
+    score += 10;
     score += 1;
     document.getElementById('score').innerHTML = score;
 
@@ -102,6 +111,7 @@ function bigBoy() {
     drawSnake();
     
     bigBoy();
+  }, 100);
   }, 25);
 }
 
@@ -132,6 +142,8 @@ function gameOver() {
 }
 
 function drawFood () {
+  ctx.fillStyle = '#00ff00';
+  ctx.strokeStyle = '#00ff00';
   ctx.fillStyle = '#ffc7ad';
   ctx.strokeStyle = '#ffc7ad';
   ctx.fillRect(foodX, foodY, 10, 10);
