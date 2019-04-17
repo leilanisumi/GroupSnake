@@ -14,7 +14,7 @@ let snake = [
   {x: 110, y: 150}
 ];
 
-let dx = 10;
+let dx = 20;
 let dy = 0;
 
 var canvas = document.getElementById('canvas');
@@ -35,7 +35,7 @@ function snakeMovement() {
   snake.unshift(head);
   const foodEaten = snake[0].x === foodX && snake [0].y === foodY;
   if (foodEaten) {
-    score += 10;
+    score += 1;
     document.getElementById('score').innerHTML = score;
 
     createFood();
@@ -102,7 +102,7 @@ function bigBoy() {
     drawSnake();
     
     bigBoy();
-  }, 100);
+  }, 25);
 }
 
 function clearCanvas() {
