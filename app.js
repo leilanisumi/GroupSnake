@@ -14,7 +14,7 @@ let snake = [
   {x: 110, y: 150}
 ];
 
-let dx = 10;
+let dx = 20;
 let dy = 0;
 
 var canvas = document.getElementById('canvas');
@@ -102,13 +102,21 @@ function bigBoy() {
     drawSnake();
     
     bigBoy();
-  }, 50);
+  }, 25);
 }
 
 function clearCanvas() {
   ctx.fillStyle = 'white';
   ctx.fillRect(0,0, canvas.width, canvas.height);
 }
+
+function gameRestart() {
+  ctx.fillStyle = 'blue';
+  ctx.strokeStyle = 'darkblue';
+  ctx.fillRect(10,5)
+  ctx.strokeRect(10,5)
+}
+
 
 function gameOver() {
   for (let i = 4; i < snake.length; i++) {
