@@ -14,7 +14,7 @@ let snake = [
   {x: 110, y: 150}
 ];
 
-let dx = 20;
+let dx = 10;
 let dy = 0;
 
 var canvas = document.getElementById('canvas');
