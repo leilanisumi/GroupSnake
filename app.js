@@ -102,14 +102,12 @@ function bigBoy() {
     drawSnake();
     
     bigBoy();
-  }, 100);
+  }, 50);
 }
 
 function clearCanvas() {
   ctx.fillStyle = 'white';
-  ctx.strokeStyle = 'black';
   ctx.fillRect(0,0, canvas.width, canvas.height);
-  ctx.strokeRect(0,0, canvas.width, canvas.height);
 }
 
 function gameOver() {

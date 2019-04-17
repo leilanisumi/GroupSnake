@@ -42,6 +42,15 @@ h1 {
 }
 
 canvas { 
-  border: 1px solid black; 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display:block;
   background-color: white;
+}
+
+.score {
+  
+  
+
 }
