@@ -14,10 +14,6 @@ let snake = [
 ];
 
 let dx = 10;
-<<<<<<< HEAD
-=======
-let dx = 20;
->>>>>>> 54852536901bb2382c2ea8238ca6a658fc5c8887
 let dy = 0;
 
 var canvas = document.getElementById('canvas');
